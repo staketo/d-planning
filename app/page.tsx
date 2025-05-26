@@ -29,57 +29,57 @@ const samplePlan: PlanItem[] = [
   { time: "8:00", activity: "開園・入園", location: "メインエントランス", type: "break", priority: "high" },
   {
     time: "8:30",
-    activity: "ビッグサンダーマウンテン",
-    location: "ウエスタンランド",
-    type: "attraction",
-    priority: "high",
-  },
-  {
-    time: "9:30",
-    activity: "スプラッシュマウンテン",
-    location: "クリッターカントリー",
-    type: "attraction",
-    priority: "high",
-  },
-  {
-    time: "10:30",
-    activity: "プーさんのハニーハント",
-    location: "ファンタジーランド",
-    type: "attraction",
+    activity: "ダックリングドリームバーガー",
+    location: "ファンタジースプリングス",
+    type: "meal",
     priority: "medium",
   },
   {
+    time: "9:30",
+    activity: "ギョウザドッグ",
+    location: "ミステリアスアイランド",
+    type: "meal",
+    priority: "medium",
+  },
+  {
+    time: "10:30",
+    activity: "フライドチキン",
+    location: "アメリカンウォーターフロント",
+    type: "meal",
+    priority: "high",
+  },
+  {
     time: "12:00",
-    activity: "昼食 - クイーン・オブ・ハートのバンケットホール",
-    location: "ファンタジーランド",
+    activity: "ユカタンソーセージドッグ",
+    location: "ロストリバーデルタ",
     type: "meal",
     priority: "medium",
   },
   {
     time: "13:30",
-    activity: "イッツ・ア・スモールワールド",
-    location: "ファンタジーランド",
-    type: "attraction",
+    activity: "クレームブリュレ風チュロス",
+    location: "ウエスタンランド",
+    type: "meal",
     priority: "medium",
   },
   {
     time: "14:30",
-    activity: "ホーンテッドマンション",
-    location: "ファンタジーランド",
-    type: "attraction",
-    priority: "high",
+    activity: "スパークリングカクテル（ウォッカ&パイナップル）",
+    location: "アメリカンウォーターフロント",
+    type: "break",
+    priority: "low",
   },
-  { time: "15:30", activity: "休憩・お土産タイム", location: "ワールドバザール", type: "break", priority: "low" },
-  { time: "16:30", activity: "パレード鑑賞", location: "パレードルート", type: "show", priority: "medium" },
+  { time: "15:30", activity: "ウィスキーカクテル（ピーチ&バタフライピー", location: "アメリカンウォーターフロント", type: "break", priority: "low" },
+  { time: "16:30", activity: "日本酒カクテル（Apple&バニラ）", location: "アメリカンウォーターフロント", type: "break", priority: "low" },
   {
     time: "18:00",
-    activity: "夕食 - ブルーバイユー・レストラン",
-    location: "アドベンチャーランド",
+    activity: "スモークチキンレッグ",
+    location: "ファンタジースプリングス",
     type: "meal",
-    priority: "medium",
+    priority: "high",
   },
-  { time: "20:00", activity: "カリブの海賊", location: "アドベンチャーランド", type: "attraction", priority: "medium" },
-  { time: "21:00", activity: "花火鑑賞", location: "シンデレラ城前", type: "show", priority: "high" },
+  { time: "20:00", activity: "退園", location: "メインエントランス", type: "break", priority: "low" },
+  { time: "21:00", activity: "ファミチキ", location: "最寄りのファミマ", type: "meal", priority: "high" },
 ]
 
 export default function DisneyPlannerApp() {
@@ -168,7 +168,7 @@ export default function DisneyPlannerApp() {
                     <SelectValue placeholder="パークを選択してください" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="disneyland">東京ディズニーランド</SelectItem>
+                    <SelectItem value="disneyland">東京ディズニーシー</SelectItem>
                     <SelectItem value="disneysea">東京ディズニーシー</SelectItem>
                   </SelectContent>
                 </Select>
@@ -285,7 +285,7 @@ export default function DisneyPlannerApp() {
               </CardTitle>
               <CardDescription>
                 {generatedPlan
-                  ? "あなたにぴったりのプランが完成しました！"
+                  ? "森さんにぴったりのプランが完成しました！"
                   : "左側で条件を設定してプランを生成してください"}
               </CardDescription>
             </CardHeader>

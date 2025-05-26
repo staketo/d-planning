@@ -28,3 +28,23 @@ Continue building your app on:
 2. Deploy your chats from the v0 interface
 3. Changes are automatically pushed to this repository
 4. Vercel deploys the latest version from this repository
+
+
+# ローカルで試すとき
+1. npm install --legacy-peer-deps
+2. npm run dev
+3. http://localhost:3000/ にアクセス
+
+# コードを編集後、githubにデプロイする時
+1. 全てのファイルをステージング
+   """
+   git add .
+   """
+2. コミット
+   """
+   git commit -m "Commit!!!"
+   """
+3. プッシュ
+   """
+   git push origin main
+   """
